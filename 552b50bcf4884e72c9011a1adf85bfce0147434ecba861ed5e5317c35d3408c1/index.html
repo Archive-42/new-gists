@@ -1,0 +1,28 @@
+<script>	
+$(document).ready(function () {
+    var data = [
+        { countryName: "Australia", technologyRating: 35 },
+        { countryName: "United States", technologyRating: 60 },
+        { countryName: "Germany", technologyRating: 55 },
+        { countryName: "Brasil", technologyRating: 20 },
+        { countryName: "United Kingdom", technologyRating: 50 },
+        { countryName: "Japan", technologyRating: 80 }
+    ];
+    var source =
+    {
+        localdata: data,
+        datatype: "array",
+        datafields: [
+           { name: 'countryName' },
+           { name: 'technologyRating' }
+        ]
+    };
+    var dataAdapter = new $.jqx.dataAdapter(source, {});
+    $('#tagCloud').jqxTagCloud({
+        width: '600px',
+        source: dataAdapter,
+        displayMember: 'countryName',
+        valueMember: 'technologyRating'
+    });
+});
+</script>

@@ -1,0 +1,3 @@
+if ('sms' in navigator) {
+  ...
+}

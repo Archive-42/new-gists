@@ -1,0 +1,13 @@
+<template>
+	…
+		<button @click="login">Sign in</button>
+	…
+</template>
+<script>
+…
+    login: function() {
+	     this.$router.replace("home");
+       }
+    }
+ …
+</script>

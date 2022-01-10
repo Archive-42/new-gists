@@ -1,0 +1,3 @@
+npmi @smarthtmlelements/smart-elements-community-FreeCommunityversionsourcefiles.
+npmi @smarthtmlelements/smart-elements-Enterprise(Professional)versionsourcefiles.
+npmi @smarthtmlelements/smart-custom-element-LibraryforCustomElementsDevelopment

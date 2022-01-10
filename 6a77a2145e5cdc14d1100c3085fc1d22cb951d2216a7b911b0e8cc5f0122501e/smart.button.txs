@@ -1,0 +1,17 @@
+import React from 'react';  
+import '@smarthtmlelements/smart-elements/source/smart.elements.js';  
+import '@smarthtmlelements/smart-elements/source/styles/smart.default.css';  
+export interface IButton {  
+      // properties  
+      name?: string;  
+      value?: string;  
+      clickMode?: 'hover' | 'press' | 'release' | 'pressAndRelease';  
+      type?: string;  
+ }  
+ declare global {  
+  namespace JSX {  
+   interface IntrinsicElements {  
+    'smart-button': any;  
+   }  
+  }  	
+}

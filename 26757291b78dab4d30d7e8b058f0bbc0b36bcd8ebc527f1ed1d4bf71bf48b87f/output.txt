@@ -1,0 +1,8 @@
+exports[`it works 1`] = `
+.c0 {
+  color: green;
+}
+<button
+  className="c0"
+/>
+`

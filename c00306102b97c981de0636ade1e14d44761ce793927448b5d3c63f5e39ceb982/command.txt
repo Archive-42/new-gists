@@ -1,0 +1,2 @@
+vue create jqwidgets-vue-cli-app 
+npm install jqwidgets-scripts –-save--dev

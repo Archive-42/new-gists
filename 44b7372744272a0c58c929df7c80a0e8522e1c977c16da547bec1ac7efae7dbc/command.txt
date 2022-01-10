@@ -1,0 +1,5 @@
+npm i -g create-jqwidgets-react-app
+npx create-jqwidgets-react-app my-app --typescript
+cd my-app
+npm install jqwidgets-script –save--dev
+npm start

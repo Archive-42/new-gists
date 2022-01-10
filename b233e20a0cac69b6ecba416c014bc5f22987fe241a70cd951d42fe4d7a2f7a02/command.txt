@@ -1,0 +1,6 @@
+$ nwb preact build Lightbulb.js
+✔ Building Preact app
+
+File size after gzip:
+
+dist\app.b12334ec.js  8.63 KB

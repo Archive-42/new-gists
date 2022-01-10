@@ -1,0 +1,1 @@
+render(<Ascii font="Slant Relief" text="INK-ASCII" />);

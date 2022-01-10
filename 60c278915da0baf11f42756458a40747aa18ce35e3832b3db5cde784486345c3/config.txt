@@ -1,0 +1,1 @@
+"config-overrides-path": "node_modules/some-preconfigured-rewire"

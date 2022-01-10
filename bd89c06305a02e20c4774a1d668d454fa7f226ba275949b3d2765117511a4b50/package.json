@@ -1,0 +1,5 @@
+"dependencies": {
+    "react": "0.0.0-experimental-5faf377df",
+    "react-dom": "0.0.0-experimental-5faf377df",
+    "react-scripts": "3.0.1"
+  },

@@ -1,0 +1,1 @@
+echo $this->currencyFormat(2543.91, "USD", "en_US");

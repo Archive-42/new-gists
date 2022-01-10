@@ -1,0 +1,20 @@
+<script>
+        $(document).ready(function () {
+            var data = [
+                { label: "Mount Everest", value: 8848 },
+                { label: "K2", value: 8611 },
+                { label: "Lhotse", value: 8516 },
+                { label: "Mana Peak", value: 7272 },
+                { label: "Musala", value: 2925 },
+                { label: "Mount Elbrus", value: 5642 },
+                { label: "Sea", value: 0 }
+            ];
+ 
+            $('#jqxTagCloud').jqxTagCloud({
+                source: data,
+                textColor: 'brown',
+                minColor: 'lightgreen',
+                maxColor: 'darkblue'
+            });
+        });
+    </script>

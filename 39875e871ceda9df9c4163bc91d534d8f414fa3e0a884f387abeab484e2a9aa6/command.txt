@@ -1,0 +1,3 @@
+// installing electron-based packages
+npm install electron electron-builder wait-on
+npm install electron-is-dev concurrently

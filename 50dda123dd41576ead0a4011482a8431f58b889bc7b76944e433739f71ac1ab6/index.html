@@ -1,0 +1,103 @@
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    function formjsCurrent(data){
+        console.log('current state');
+        console.log(data);
+    }
+    function formjsSubmit(data){
+        console.log('form submit');
+        console.log(data);
+
+    }
+    function formjsFilesOnSubmit(data){
+        console.log('files array on submit');
+        console.log(data);
+    }
+    function formjsFilesOnSelect(data){
+        console.log('files array on selecte');
+        console.log(data);
+    }
+    var values = [{
+    "title": "Hello world",
+    "bullets": [
+        {
+            "text": "hello",
+            "score": 5.5
+        },
+        {
+            "text": "world",
+            "score": 9.5
+        }
+    ],
+    "are_you_awesome": true,
+    "chromosome_configuration": "male",
+    "age": 21,
+    "birthday": "1970-01-01",
+    "email": "thedude@gmail.com"
+}];
+      var schema = [
+        {
+            "description": "Create A doo hicky", 
+            "schema": {
+                "type": "object", 
+                "properties": {
+                    "title": {
+                        "type": "string",  
+                        "title": "title"
+                    }, 
+                    "bullets": {
+                        "items": {
+                            "type": "object", 
+                            "properties": {
+                                "text": {
+                                    "type": "string", 
+                                    "description": null, 
+                                    "title": "text"
+                                },
+                                "score": {
+                                    "type": "number",
+                                    "title": "score",
+                                    "enum": [1.5, 5.5, 9.5]
+                                }
+
+                            }
+                        }, 
+                        
+                        "type": "array", 
+                        "description": "", 
+                        "title": "Bullets"
+                    }, 
+                    "are_you_awesome": {
+                        "type": "boolean"
+                    },
+                    "chromosome_configuration": {
+                        "type": "string",
+                        "enum": ["male", "female"]
+                    },
+                    "age": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 150
+                    },
+                    "birthday": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email",
+                    }
+                }
+            }
+        }];
+
+var forms = [];
+for (var i = 0; i < schema.length; i++) {
+  forms.push(formjs( {data:schema[i], values: values[i], iteration:i, submitState:formjsSubmit, filesOnSubmit:formjsFilesOnSubmit, filesOnSelect:formjsFilesOnSelect, currentState:formjsCurrent} ));
+}
+React.renderComponent(
+  React.DOM.div(null, forms),
+  document.body
+);
+});
+</script>

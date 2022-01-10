@@ -1,0 +1,3 @@
+npm i @smarthtmlelements/smart-core  // for core version source file.
+npm i @smarthtmlelements/smart-elements // Commercial version source file
+npm i @smarthtmlelements/smart-custom-element // Library for Custom Elements Development

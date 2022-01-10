@@ -1,0 +1,1 @@
+import {Motion, spring} from '../../src/react-motion';

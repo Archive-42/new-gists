@@ -1,0 +1,1 @@
+chart.colorScheme = 'myScheme';

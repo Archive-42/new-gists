@@ -1,0 +1,2 @@
+yarn add vue-styled-components
+npm install vue-styled-components

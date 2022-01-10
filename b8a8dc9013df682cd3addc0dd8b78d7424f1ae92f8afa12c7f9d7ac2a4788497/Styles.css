@@ -1,0 +1,14 @@
+.bowling-alley {
+border-radius: 0px;
+background-color: rgb(222, 184, 135);
+position: relative;
+width: 800px;
+height: 100px;
+}
+.ball {
+position: top;
+width: 100px;
+height: 100px;
+border-radius: 1000px;
+background-color: rgb(160, 15, 15);
+}

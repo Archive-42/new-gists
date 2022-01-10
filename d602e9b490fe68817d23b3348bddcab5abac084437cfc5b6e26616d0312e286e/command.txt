@@ -1,0 +1,1 @@
+npm install jqwidgets-scripts --save

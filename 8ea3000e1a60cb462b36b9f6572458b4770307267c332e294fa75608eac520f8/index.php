@@ -1,0 +1,1 @@
+$translator->translate($message, $textDomain, $locale);
